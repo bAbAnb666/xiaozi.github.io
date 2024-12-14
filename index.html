@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>小梓文件---功能强大而稳定</title>
+    <style>
+        /* 添加 box-sizing 为所有元素，并禁用文本选择 */
+        * {
+            box-sizing: border-box;
+            user-select: none; /* 禁止所有文字被选中 */
+        }
+
+        body {
+            display: flex; 
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100vh;          
+            margin: 0;
+            position: relative;     
+            background-color: #000; /* 背景改为黑色 */
+            color: #fff; /* 所有文本颜色为白色 */
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* 防止水平滚动条 */
+        }
+
+        .top-section {
+            width: 100%;
+            height: 95px;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            padding: 0 10px; /* 左右内边距 */
+            justify-content: space-between; /* 子元素之间均匀分布 */
+            
+        }
+
+        .top-section h1 {
+            color: #fff; 
+            margin: 0; 
+        }
+
+        .top-section img {
+            width: 75px; 
+            height: 75px; 
+            border-radius: 15px;
+            border: 2px solid #fff;
+            margin-right: 10px;
+        }
+
+        .top-section button {
+            width: 75px;  
+            height: 75px; 
+            border-radius: 5px;
+            border: 2px solid #fff;  /* 按钮边框为白色 */
+            background-color: #000; 
+            color: #fff;  /* 按钮文字为白色 */
+            cursor: pointer;
+            margin-right: 10px; 
+        }
+
+        .top-section button:hover {
+            background-color: #333;
+        }
+
+        /* 按钮区域 */
+        .buttons {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between; /* 保证按钮左右对齐 */
+            flex-wrap: wrap; /* 当屏幕较小时自动换行 */
+            width: 100%;
+            box-sizing: border-box;
+            gap: 10px; /* 按钮间距 */
+            padding: 0 20px; /* 防止按钮溢出 */
+        }
+
+        .buttons button {
+            width: 23%;  /* 按钮宽度为屏幕的 1/4（减去间距） */
+            padding: 10px 20px;
+            background-color: #000; /* 按钮背景为黑色 */
+            color: white; /* 按钮文字为白色 */
+            border: 2px solid #fff;  /* 白色边框 */
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            min-width: 120px; /* 确保按钮最小宽度 */
+            text-align: center; /* 文字居中 */
+        }
+
+        .buttons button:hover {
+            background-color: #333;
+            transform: translateY(-5px); /* 按钮浮动效果 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 按钮浮动时的阴影效果 */
+        }
+
+        /* 内容区域 */
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #000; /* 背景为黑色 */
+            color: #fff; /* 文字为白色 */
+            overflow: hidden; /* 防止内容溢出 */
+        }
+
+        .section {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            transition: visibility 0s 0.3s;
+            border: 2px solid #fff; /* 增加白色描边 */
+            border-radius: 10px; /* 圆角 */
+            padding: 20px;
+            width: calc(100% - 0px); /* 防止内容溢出 */
+            margin: 10px 0; /* 上下间距 */
+            box-sizing: border-box; /* 确保边框不会影响宽度 */
+        }
+
+        .section.active {
+            visibility: visible;
+            opacity: 1;
+            position: relative;
+            transition: opacity 0.3s ease, visibility 0s 0s;
+        }
+
+        .section h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #fff; /* 标题文字为白色 */
+        }
+
+        .section p {
+            font-size: 0.9em;
+            color: #fff; /* 内容文字为白色 */
+        }
+
+        .section a {
+            color: #fff; /* 链接文字为白色 */
+            text-decoration: none;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        /* 分隔线样式 */
+        .separator {
+            width: 100%;
+            height: 1px;
+            background-color: #fff; /* 白色分隔线 */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-section">
+        <img src="https://124-238-119-13.pd1.cjjd19.com:30443/download-cdn.cjjd19.com/123-425/10111d83/1816356914-0/10111d83e3647883a6ca3b063dd921a9/c-m60?v=5&t=1734186501&s=1734186501d8a3cb550d66deced69ce243f48abdc8&r=99QCZP&bzc=2&bzs=313831363335363931343a36393130383137393a35323230323a30&filename=xiaozi.jpg&x-mf-biz-cid=f7ec18a6-f71d-40cd-8b58-8488e56fb66d-3dab77&auto_redirect=0&cache_type=1&xmfcid=55cfcbfa-da20-4269-9655-8ae35d8b9664-1-50111d3b1" alt="应用图标"/>
+        <div>
+            <h1>小梓文件</h1>
+            <h1>稳定一生</h1>
+        </div>
+        <button onclick="joinUs()">加入我们</button>
+    </div>
+
+    <!-- 添加分隔线 -->
+    <div class="separator"></div>
+
+    <div class="buttons">
+        <button onclick="showSection('section1')">新版发布</button>
+        <button onclick="showSection('section2')">卡网链接</button>
+        <button onclick="showSection('section3')">官方网盘</button>
+        <button onclick="showSection('section4')">用户反馈</button>
+    </div>
+
+    <div class="sections">
+        <div id="section1" class="section active">
+            <h2>新版发布</h2>
+            <p>我们很高兴地宣布，小梓文件最新版本现已发布！文件已经变得更强。</p>
+        </div>
+        <div id="section2" class="section">
+            <h2>卡网链接</h2>
+            <p>访问我们的卡网链接，购买稳定文件!</p>
+            <a href="https://www.bjmingzun.cn/links/58B44873">跳转卡网</a>
+        </div>
+        <div id="section3" class="section">
+            <h2>官方网盘</h2>
+            <p>访问我们的官方网盘，下载快人一步!</p>
+            <a href="https://183-215-55-10.pd1.cjjd19.com:30443/download-cdn.cjjd19.com/123-313/e89abef7/1816356914-0/e89abef7785c48912562010f47a70539/c-m60?v=5&t=1733671312&s=1733671312988f2869f51df68baf8c85a3089dde13&r=GXX2LU&bzc=2&bzs=313831363335363931343a36393130373831343a313937393630383a30&filename=base(1).apk&x-mf-biz-cid=c1ee1900-dcf0-4f9d-bf5e-f47852899b1f-3dab77&auto_redirect=0&cache_type=1&xmfcid=2cbbec1e-efe6-4623-8b34-2464acb183ea-1-50111d3b1">下载网盘</a>
+        </div>
+        <div id="section4" class="section">
+            <h2>用户反馈</h2>
+            <p>您的意见对我们非常重要！但为了维护我们的名誉权，暂不支持用户上传反馈。</p>
+            <a href="https://183-215-55-10.pd1.cjjd19.com:30443/download-cdn.cjjd19.com/123-909/2ca3b7ba/1816356914-0/2ca3b7ba1279c4ad64d3de564519af8d/c-m60?v=5&t=1733674061&s=1733674061986ccbb9d109ca67ba417dee27b9a6c8&r=LAA1EY&bzc=2&bzs=313831363335363931343a36393130373831353a313836323a30&filename=fankui.html&x-mf-biz-cid=54a13248-304e-49ee-8239-b89f43208af5-584000&auto_redirect=0&cache_type=1&xmfcid=c3c64b14-77dd-4e58-8a34-b0a63efe53dc-1-50111d3b1">查看反馈</a>
+        </div>
+    </div>
+
+    <script>
+        function joinUs() {
+            window.location.href = "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Xu6NMA2ofrHjxcxaR9GSuEPJMipBvIdA&authKey=3eC18UQUGAWTLh5SsRXMW0vmqgYm663W2vRo%2F4M6GiHZhjda8MwhxeNPl3pjbZ8s&noverify=0&group_code=1005255109";  // 替换成你希望跳转的 URL
+        }
+
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
