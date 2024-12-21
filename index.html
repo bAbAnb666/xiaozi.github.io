@@ -127,90 +127,90 @@
             transition: opacity 0.3s ease, visibility 0s 0s;
         }
 
-.第h2节{
-            上边距:0;
-            字体大小:1.2他们;
-            颜色：#fff；/* 标题文字为白色 */
+        .section h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #fff; /* 标题文字为白色 */
         }
 
-.第p节{
-            字体大小:0.9他们;
-            颜色：#fff；/* 内容文字为白色 */
+        .section p {
+            font-size: 0.9em;
+            color: #fff; /* 内容文字为白色 */
         }
 
-.截面a{
-            颜色：#fff；/* 链接文字为白色 */
-            文字装饰:没有一个;
+        .section a {
+            color: #fff; /* 链接文字为白色 */
+            text-decoration: none;
         }
 
-.第a节：盘旋 {
-            文字装饰:下划线;
+        .section a:hover {
+            text-decoration: underline;
         }
 
         /* 分隔线样式 */
-.分离器{
-            宽度:100%;
-            高度:1PX;
-            背景色：#fff；/* 白色分隔线 */
+        .separator {
+            width: 100%;
+            height: 1px;
+            background-color: #fff; /* 白色分隔线 */
         }
-    </风格>
-</头>
-<身体>
-    <div班级="顶部">
-        <IMGsrc="https://124-238-119-13.pd1.cjjd19.com:30443/download-cdn.cjjd19.com/123-425/10111d83/1816356914-0/10111d83e3647883a6ca3b063dd921a9/c-m60?v=5&T=1734186501&s=1734186501d8a3cb550d66deced69ce243f48abdc8&R=99QCZP&BZC=2&bzs=313831363335363931343a36393130383137393a35323230323a30&文件名=xiaozi.jpg&x-mf-biz-cid=f7ec18a6-f71d-40cd-8b58-8488e56fb66d-3dab77&auto_redirect=0&cache_type=1&xmfcid=55cfcfbfa-da20-4269-9655-8ae35d8b9664-1-50111d3b1" alt="应用图标"/>
+    </style>
+</head>
+<body>
+    <div class="top-section">
+        <img src="https://124-238-119-11.pd1.cjjd19.com:30443/download-cdn.cjjd19.com/123-425/10111d83/1816356914-0/10111d83e3647883a6ca3b063dd921a9/c-m60?v=5&t=1733665088&s=173366508827ad2212746a232e923f0043c0e6bf96&r=6FQRCK&bzc=2&bzs=313831363335363931343a36393130373830333a35323230323a30&filename=xiaozi.jpg&x-mf-biz-cid=c7ed243e-3edf-44cf-9553-add27958db13-6eaa77&auto_redirect=0&cache_type=1&xmfcid=2b543818-d83c-4711-9942-e35a90861438-1-50111d3b1" alt="应用图标"/>
         <div>
-            <H1>小梓文件</H1>
-            <H1>稳定一生</H1>
+            <h1>小梓文件</h1>
+            <h1>稳定一生</h1>
         </div>
-        <按钮onClick="joinus()">加入我们</按钮>
+        <button onclick="joinUs()">加入我们</button>
     </div>
 
-    <! -- 添加分隔线 -->
-    <div班级="分隔符"></div>
+    <!-- 添加分隔线 -->
+    <div class="separator"></div>
 
-    <div班级="按钮">
-        <按钮onClick="showSection('section1')">新版发布</按钮>
-        <按钮onClick="showSection('section2')">卡网链接</按钮>
-        <按钮onClick="showSection('section3')">官方网盘</按钮>
-        <按钮onClick="showSection('section4')">用户反馈</按钮>
+    <div class="buttons">
+        <button onclick="showSection('section1')">新版发布</button>
+        <button onclick="showSection('section2')">卡网链接</button>
+        <button onclick="showSection('section3')">官方网盘</button>
+        <button onclick="showSection('section4')">用户反馈</button>
     </div>
 
-    <div班级="节">
-        <div身份标识="section1" 班级="区段激活">
-            <H2>新版发布</H2>
-            <p>我们很高兴地宣布，小梓文件最新版本现已发布！ 文件已经变得更强。</p>
+    <div class="sections">
+        <div id="section1" class="section active">
+            <h2>新版发布</h2>
+            <p>我们很高兴地宣布，小梓文件最新版本现已发布！更新内容包括性能优化、用户界面改进以及新增功能。</p>
         </div>
-        <div身份标识="section2" 班级="节">
-            <H2>卡网链接</H2>
+        <div id="section2" class="section">
+            <h2>卡网链接</h2>
             <p>访问我们的卡网链接，购买稳定文件!</p>
-            <一个href="https://www.bjmingzun.cn/links/58B44873">跳转卡网</一个>
+            <a href="https://916fka.longpai.hk/links/EEAE9580">跳转卡网</a>
         </div>
-        <div身份标识="section3" 班级="节">
-            <H2>官方网盘</H2>
+        <div id="section3" class="section">
+            <h2>官方网盘</h2>
             <p>访问我们的官方网盘，下载快人一步!</p>
-            <一个href="https://raw.githubusercontent.com/bAbAnb666/xiaozi.github.io/refs/heads/main/%E5%B0%8F%E6%A2%93%E7%BD%91%E7%9B%98_%E5%B0%8F%E6%A2%93PUBG%E7%BD%91%E7%9B%98%E9%BE%98%E8%BE%AD%E9%AC%B5.apk">下载网盘</一个>
+            <a href="https://www.123865.com/s/oSKejv-tUNEd">下载网盘</a>
         </div>
-        <div身份标识="section4" 班级="节">
-            <H2>用户反馈</H2>
-            <p>您的意见对我们非常重要！ 但为了维护我们的名誉权，暂不支持用户上传反馈。</p>
-            <一个href="https://183-215-55-10.pd1.cjjd19.com:30443/download-cdn.cjjd19.com/123-909/2ca3b7ba/1816356914-0/2ca3b7ba1279c4ad64d3de564519af8d/c-m60?v=5&T=1733674061&s=1733674061986ccbb9d109ca67ba417dee27b9a6c8&R=LAA1EY&BZC=2&bzs=313831363335363931343a36393130373831353a313836323a30&文件名=fankui.html&x-mf-biz-cid=54a13248-304e-49ee-8239-b89f43208af5-584000&auto_redirect=0&cache_type=1&xmfcid=c3c64b14-77dd-4e58-8a34-b0a63efe53dc-1-50111d3b1">查看反馈</一个>
+        <div id="section4" class="section">
+            <h2>用户反馈</h2>
+            <p>您的意见对我们非常重要！但为了维护我们的名誉权，暂不支持用户上传反馈。</p>
+            <a href="https://183-215-55-10.pd1.cjjd19.com:30443/download-cdn.cjjd19.com/123-909/2ca3b7ba/1816356914-0/2ca3b7ba1279c4ad64d3de564519af8d/c-m60?v=5&t=1733674061&s=1733674061986ccbb9d109ca67ba417dee27b9a6c8&r=LAA1EY&bzc=2&bzs=313831363335363931343a36393130373831353a313836323a30&filename=fankui.html&x-mf-biz-cid=54a13248-304e-49ee-8239-b89f43208af5-584000&auto_redirect=0&cache_type=1&xmfcid=c3c64b14-77dd-4e58-8a34-b0a63efe53dc-1-50111d3b1">查看反馈</a>
         </div>
     </div>
 
-    <脚本>
-        功能 joinus() {
-窗户。位置.href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Xu6NMA2ofrHjxcxaR9GSuEPJMipBvIdA&authKey=3eC18UQUGAWTLh5SsRXMW0vmqgYm663W2vRo%2F4M6GiHZhjda8MwhxeNPl3pjbZ8s&noverify=0&group_code=1005255109";// 替换成你希望跳转的 URL
+    <script>
+        function joinUs() {
+            window.location.href = "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Xu6NMA2ofrHjxcxaR9GSuEPJMipBvIdA&authKey=3eC18UQUGAWTLh5SsRXMW0vmqgYm663W2vRo%2F4M6GiHZhjda8MwhxeNPl3pjbZ8s&noverify=0&group_code=1005255109";  // 替换成你希望跳转的 URL
         }
 
-        功能 showSection(sectionID) {
-            var 节=文档。querySelectorAll('.节');
-章节。foreach(功能(部分) {
-部分。classList.移除('活动');
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
             });
             
-            var selectedSection=文档。getElementById(sectionID);
-selectedSection。classList.添加('活动');
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
         }
-    </脚本>
-</身体>
-</超文本标记语言>
+    </script>
+</body>
+</html>
